@@ -10,8 +10,6 @@ const grundumsatzJoule = document.querySelector("#grundumsatzJoule")
 const gesamtumsatzKalorien = document.querySelector("#gesamtumsatzKalorien")
 const gesamtumsatzJoule = document.querySelector("#gesamtumsatzJoule")
 
-
-
 submitButton.addEventListener('click', () => {
     if(männlich.checked){
         grundumsatzKalorien.textContent  = (664.7 + (13.7 * gewicht.value) + (5 * körpergröße.value) - (6.8 * alter.value))
