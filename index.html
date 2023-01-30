@@ -7,8 +7,54 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/output.css">
 </head>
-<body>
-    
+<body class="flex justify-center">
+    <section class="text-center border-2 w-96 ">
+        <h1>Kalorien rechner</h1>
+        <form class="w-1/2 mx-auto"  onsubmit="return false">
+            <label class=" block" for="körpergröße">Körpergröße</label>
+            <input class=" mx-auto block border-2 border-gray-500" placeholder="In cm" type="number" name="körpergröße" id="körpergröße">
+            <label class="block" for="alter">Alter</label>
+            <input class=" mx-auto  block border-2 border-gray-500" min="1" type="number" name="alter" id="alter">
+            <label class="block" for="gewicht">Gewicht</label>
+            <input class="mx-auto  block border-2 border-gray-500" placeholder="In Kg" min="1" type="number" name="gewicht" id="gewicht">
+            <label class=" block" for="geschlecht">Körperbau</label>
+            <div >
+                <label for="weiblich">weiblich</label>
+                <input type="radio" name="geschlecht" id="weiblich">
+                <label for="männlich">männlich</label>
+                <input type="radio" name="geschlecht" id="männlich">
+            </div>
+            <label for="aktivitäten">Arbeits- und Freizeitaktivitäten</label>
+            <select class=" border-2 mb-3 mx-auto  border-gray-600 block w-1/2" name="aktivitäten" id="aktivitäten">
+                <option value="0.95">Schlafen</option>
+                <option value="1.2">Nur Sitzen oder Liegen</option>
+                <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit, z.B. Büroarbeit</option>
+                <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                <option value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker, Mechaniker, Hausfrauen</option>
+                <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+            </select>
+            <label class=" hidden" for="submitButton">submitButton</label>
+            <button class=" mb-4 border-gray-500 border-2 w-28" id="submitButton">Submit</button>
+        </form>
+            <table class="mx-auto">
+                <tr>
+                    <th class="border-2"></th>
+                    <th class="border-2">Kcal</th>
+                    <th class="border-2">KJ</th>
+                </tr>
+                <tr>
+                    <td class="border-2">Grundumsatz</td>
+                    <td class="border-2" id="grundumsatzKalorien"></td>
+                    <td class="border-2" id="grundumsatzJoule"></td>
+                </tr>
+                <tr>
+                    <td class="border-2">Gesamtumsatz</td>
+                    <td class="border-2" id="gesamtumsatzKalorien"></td>
+                    <td class="border-2" id="gesamtumsatzJoule"></td>
+                </tr>
+            </table>
+    </section>
+
 
     <script src="./assets/js/main.js"></script>
 </body>
