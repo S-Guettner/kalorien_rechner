@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./assets/css/output.css">
 </head>
 <body class="flex justify-center">
-    <section class="text-center border-2 w-96 mt-36 ">
-        <h1>Kalorien rechner</h1>
+    <section class="text-center border-2 w-96 rounded-md mt-36 bg-green-100 border-gray-500 pb-2">
+        <h1 class="mb-2">Kalorien rechner</h1>
         <form class="w-1/2 mx-auto"  onsubmit="return false">
             <label class=" block" for="körpergröße">Körpergröße</label>
             <input class=" mx-auto block border-2 border-gray-500" placeholder="In cm" type="number" name="körpergröße" id="körpergröße">
@@ -38,19 +38,19 @@
         </form>
             <table class="mx-auto">
                 <tr>
-                    <th class="border-2"></th>
-                    <th class="border-2">Kcal</th>
-                    <th class="border-2">KJ</th>
+                    <th class="border-2 border-gray-500"></th>
+                    <th class="border-2 border-gray-500">Kcal</th>
+                    <th class="border-2 border-gray-500">KJ</th>
                 </tr>
                 <tr>
-                    <td class="border-2">Grundumsatz</td>
-                    <td class="border-2" id="grundumsatzKalorien"></td>
-                    <td class="border-2" id="grundumsatzJoule"></td>
+                    <td class="border-2 border-gray-500">Grundumsatz</td>
+                    <td class="border-2 border-gray-500" id="grundumsatzKalorien"></td>
+                    <td class="border-2 border-gray-500" id="grundumsatzJoule"></td>
                 </tr>
                 <tr>
-                    <td class="border-2">Gesamtumsatz</td>
-                    <td class="border-2" id="gesamtumsatzKalorien"></td>
-                    <td class="border-2" id="gesamtumsatzJoule"></td>
+                    <td class="border-2 border-gray-500">Gesamtumsatz</td>
+                    <td class="border-2 border-gray-500" id="gesamtumsatzKalorien"></td>
+                    <td class="border-2 border-gray-500" id="gesamtumsatzJoule"></td>
                 </tr>
             </table>
     </section>
